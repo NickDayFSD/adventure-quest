@@ -15,7 +15,7 @@
 Initialize HP, Gold, quests completed, name
 
 ## Signup page
- - Form with a button
+ - FORM with a button
  - on submit...
     - put the name and class into local storage
 
