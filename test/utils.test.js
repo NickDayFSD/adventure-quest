@@ -46,16 +46,28 @@ test('should set the user into local storage', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('retrieve user data from local storage', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = true;
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = true;
+test('should retrieve user data from local storage', (expect) => {
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    const user = {
+        hp: 35,
+        gold: 0,
+        name: 'wild bill',
+        class: 'cowboy',
+        completed: {}
+    };
+
+    saveUser(user);
+
+    const expected = {
+        hp: 35,
+        gold: 0,
+        name: 'wild bill',
+        class: 'cowboy',
+        completed: {}
+    };;
+    
+    const actual = getUser();
+
+
+    expect.deepEqual(actual, expected);
 });
