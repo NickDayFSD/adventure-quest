@@ -17,3 +17,7 @@ export function saveUser(userData) {
     const stringUser = JSON.stringify(userData);
     localStorage.setItem(CHARACTER, stringUser);
 }
+
+export function updateUser() {
+    
+}
