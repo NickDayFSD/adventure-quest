@@ -68,6 +68,7 @@ test('should retrieve user data from local storage', (expect) => {
     
     const actual = getUser();
 
+    console.log(actual);
 
     expect.deepEqual(actual, expected);
 });
