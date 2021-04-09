@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 import { findById } from '../utils.js'
+import { getUser, saveUser } from '../data-utils.js'
 
 const test = QUnit.test;
 
@@ -18,6 +19,35 @@ test('should take in an array and an item and find a match by id', (expect) => {
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
+});
+
+test('should set the user into local storage', (expect) => {
+
+    const user = {
+        hp: 35,
+        gold: 0,
+        name: 'wild bill',
+        class: 'cowboy',
+        completed: {}
+    }
+
+    saveUser(user);
+
+    const expected = {
+        hp: 35,
+        gold: 0,
+        name: 'wild bill',
+        class: 'cowboy',
+        completed: {}
+    };
+    
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const actual = JSON.parse(localStorage.getItem ('USER'));
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
 });
 
 test('time to test a function', (expect) => {
