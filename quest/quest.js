@@ -2,7 +2,7 @@ import { createChoice } from './quest-utils.js';
 import { questResult, findById } from '../utils.js';
 import { loadProfile } from '../common.js';
 import quests from '../data/quest-data.js';
-import { getUser, saveUser} from '../local-storage-utils.js';
+import { getUser, saveUser } from '../local-storage-utils.js';
 
 loadProfile();
 

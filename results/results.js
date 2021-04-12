@@ -24,6 +24,6 @@ const goldMessage = goldMessages[goldResult];
 
 let story = 'When you retire from your adventures, ';
 
-story += `${user.name} the ${user.classType}, ${hpMessage} and ${goldMessage}.`
+story += `${user.name} the ${user.classType}, ${hpMessage} and ${goldMessage}.`;
 
 storyDisplay.textContent = story;
