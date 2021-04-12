@@ -27,7 +27,7 @@ export function completedQuest(quest) {
 }
 
 // all quests completed function
-export function allComplete(quest, user) {
+export function allComplete(quests, user) {
     // should check user quests against total quests
     for (let quest of quests) {
         if (!user.completed[quest.id]) {
