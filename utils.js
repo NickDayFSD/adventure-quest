@@ -6,7 +6,7 @@ export function findById(array, id) {
 
 export function questResult(choice, questId, user) {
     // add health to user
-    user.health += choice.health;
+    user.hp += choice.hp;
     // add gold to user
     user.gold += choice.gold;
     // add questId to completed

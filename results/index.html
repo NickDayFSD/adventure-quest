@@ -16,7 +16,7 @@
     <header>
         <h1>Adventure Quest</h1>
         <div class="profile">
-            <img id="avatar" src="">
+            <img id="avatar">
             <span id="name"></span>
             hp: <span id="hp"></span>
             gold: <span id="gold"></span>
@@ -24,26 +24,18 @@
     </header>
 
     <main>
-        <h2 id="title"></h2>
+        <h2 id="title">Your adventure has ended</h2>
+        <p id="story-display"></p>
+        <img id="result-image">
         <p>
-            <img id="image">
-            <audio id="audio" autoplay></audio>
+            <a href="../">Start Over</a>
         </p>
-        <p id="description"></p>
-        <form id="choice-form">
-            <p id="choices"></p>
-            <button>Choose</button>
-        </form>
-        <section id="result" class="hidden">
-            <p id="result-description"></p>
-            <a href="../map/index.html">Back to Map</a>
-        </section>
     </main>
     <footer>
         <div class="copy gutter-right">by Nick Day</div>
     </footer>
 
-    <script type="module" src="quest.js"></script>
+    <script type="module" src="results.js"></script>
 </body>
 
 </html>
