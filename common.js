@@ -14,7 +14,7 @@ export function loadProfile() {
     const user = getUser();
 
     if (!user) {
-        window.location = './'
+        window.location = './';
     }
 
     name.textContent = user.name;

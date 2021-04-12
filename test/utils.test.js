@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { findById, questResult } from '../utils.js';
+import { findById } from '../utils.js';
 import { getUser, saveUser } from '../local-storage-utils.js';
 
 const test = QUnit.test;
@@ -62,8 +62,6 @@ test('should retrieve user data from local storage', (expect) => {
     };
     
     const actual = getUser();
-
-    console.log(actual);
 
     expect.deepEqual(actual, expected);
 });
