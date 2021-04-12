@@ -20,28 +20,30 @@
     </header>
     <main>
         </details>Start the adventure with your choices below.</details>
-        <input type="text" required />
-        <fileset>
-            <legend>Pick your class:</legend>
-            <p id="avatars">
-                <label>
-                    <input type="radio" name="class" required value="cowboy">
-                    <img>
-                    Cowboy
-                </label>
-                <label>
-                    <input type="radio" name="class" required value="cowboy">
-                    <img>
-                    Cowboy
-                </label>
-                <label>
-                    <input type="radio" name="class" required value="cowboy">
-                    <img>
-                    Cowboy
-                </label>
-            </p>
-        </fileset>
-        <button>BEGIN</button>
+        <form id="user-options">
+            <input type="text" name="name" required value="name" />
+            <fileset>
+                <legend>Pick your class:</legend>
+                <p id="avatars">
+                    <label>
+                        <input type="radio" name="class" required value="warrior">
+                        <img>
+                        Warrior
+                    </label>
+                    <label>
+                        <input type="radio" name="class" required value="artificer">
+                        <img>
+                        Artificer
+                    </label>
+                    <label>
+                        <input type="radio" name="class" required value="sorcerer">
+                        <img>
+                        Sorcerer
+                     </label>
+                </p>
+            </fileset>
+            <button>BEGIN</button>
+        </form>
     </main>
     <footer>
         <div class="copy gutter-right">by Nick Day</div>
