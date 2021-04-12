@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Adventure!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Adventure Quest</h1>
+        <div class="profile">
+            <img id="avatar" src="">
+            <span id="name"></span>
+            <span class="profile-stat-label"></span>
+            <span id="hp"></span>
+            <span class="profile-stat-label"></span>
+            <span id="gold"></span>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="title"></h2>
+        <p>
+            <img id="image">
+            <audio id="audio" autoplay></audio>
+        </p>
+        <p id="description"></p>
+        <form id="choice-form">
+            <p id="choices"></p>
+            <button>Choose</button>
+        </form>
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="../map/index.html">Back to Map</a>
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">by Nick Day</div>
+    </footer>
+
+    <script type="module" src="quest.js"></script>
+</body>
+
+</html>
