@@ -22,6 +22,15 @@ header {
     background-color: lightskyblue;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -30,12 +39,14 @@ main {
     background-color: rgb(204, 147, 90);
     margin: 1.8rem;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2.5rem;
 }
 
 legend {
@@ -102,6 +113,12 @@ label {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.begin-button {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 .hidden {
