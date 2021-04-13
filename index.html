@@ -15,34 +15,37 @@
 <body>
     <header>
         <div class="gutter-right logo">
-            Adventuuuuuure!
+            <h1>Adventure Awaits!</h>
         </div>
     </header>
     <main>
-        </details>Start the adventure with your choices below.</details>
+        <h2>Start the adventure with your choices below.</h2>
         <form id="user-options">
-            <input type="text" name="name" required value="name" />
-            <fileset>
+            <div class="name-container">
+                Enter your character name here: 
+                <input type="text" placeholder="What's your name?" name="name" required class="name-field" />
+            </div>
+            <div>
                 <legend>Pick your class:</legend>
                 <p id="avatars">
-                    <label>
-                        <input type="radio" name="class" required value="warrior">
-                        <img>
-                        Warrior
+                    <label class="warrior">
+                        <input type="radio" name="class" class="hidden" required value="warrior">
+                        <img src="./assets/avatars/warrior.png">
+                        <label>Warrior</label>
                     </label>
-                    <label>
-                        <input type="radio" name="class" required value="artificer">
-                        <img>
-                        Artificer
+                    <label class="artificer">
+                        <input type="radio" name="class" class="hidden" required value="artificer">
+                        <img src="./assets/avatars/artificer.png">
+                        <label>Artificer</label>
                     </label>
-                    <label>
-                        <input type="radio" name="class" required value="sorcerer">
-                        <img>
-                        Sorcerer
+                    <label class="sorcerer">
+                        <input type="radio" name="class" class="hidden" required value="sorcerer">
+                        <img src="./assets/avatars/sorcerer.png">
+                        <label>Sorcerer</label>
                      </label>
                 </p>
-            </fileset>
-            <button>BEGIN</button>
+            </div>
+            <button class="myButton">BEGIN</button>
         </form>
     </main>
     <footer>
